@@ -1,0 +1,71 @@
+
+
+body{
+    font-family: sans-serif;
+    background: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+
+.container{
+    background: hsl(244, 38%, 16%);
+    border: 2px solid black;
+    margin: 50px 250px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.insights{
+    color:hsl(277, 64%, 61%) ;
+}
+
+.hero{
+    background-image: url(images/image-header-desktop.jpg);
+    height: 400px;
+    width: 600px;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.accent{
+    background-color: hsla(277, 64%, 61%, 0.603);
+    height: 100%;
+    width: 100%;
+}
+
+.summary{
+    color: hsla(0, 0%, 100%, 0.6);
+    width: 40ch;
+    border: 1px solid hsl(277, 64%, 61%);
+    line-height: 23px;
+    font-weight: 500;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    width: 20ch;
+}
+main{
+    border: 2px solid black;
+    padding:30px 80px;
+    width: 550px;
+    height: 338px;
+}
+.num{
+    margin: 100px 0px 0px;
+    border: 2px solid black;
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+.num p{
+    color:hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.num p span{
+    font-size: 11px;
+    font-weight: lighter;
+    color: hsla(0, 0%, 100%, 0.6);
+    
+}
