@@ -1,71 +1,184 @@
+/*===============
+RESET SELECTOR
+================ */
 
-
-body{
-    font-family: sans-serif;
-    background: hsl(233, 47%, 7%);
-    font-size: 15px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    background: hsl(244, 38%, 16%);
-    border: 2px solid black;
-    margin: 50px 250px;
+/*===============
+    BODY
+================ */
+body{
+    font:15px sans-serif;
+    background: hsl(233, 47%, 7%);
+}
+
+
+
+
+
+/*===============
+ENTIRE CARD
+================ */
+/* The main card selector */
+.card{
+    height: 400px;
     display: flex;
+    margin: 120px 300px 50px;
     border-radius: 10px;
+    /* text-align: center; */
+}
+
+/* Selecting the section with the text */
+.txt-side{
+    border-radius: 10px 0px 0px 10px;
+    background: hsl(244, 38%, 16%);
+    display: inline-block;
+    padding: 45px 0px;
+    width: 600px;
+}
+/* Giving a little margin to the txt side */
+.margin{
+    margin-left: 80px;
+}
+/* The main text in the text side */
+header{
+    color: hsl(0, 0%, 100%);
+    width: 70%;
+}
+/* The purple highlight within the header */
+header span{
+    color: hsl(277, 64%, 61%);
+}
+
+
+/* The main information */
+main p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 30px 0px 0px 0px ;
+    width: 357px;
+    line-height: 20px;
+}
+
+/* The stats section */
+footer{
+    margin: 70px 0px 0px 0px ;
+    display: flex;
+    width: 60%;
     justify-content: space-between;
 }
-.insights{
-    color:hsl(277, 64%, 61%) ;
+footer p{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    color:hsl(0, 0%, 100%);
+}
+footer p span{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 14px;
+    font-weight: 100;
 }
 
-.hero{
-    background-image: url(images/image-header-desktop.jpg);
+/*===============
+IMAGE SECTION
+================ */
+.hero-side{
+    width: 500px;
     height: 400px;
-    width: 600px;
-    background-size:100%;
-    background-repeat: no-repeat;
+    /* border-radius: 0px 10px 10px 0px; */
 }
-.accent{
-    background-color: hsla(277, 64%, 61%, 0.603);
+.hero{
+    border-radius: 0px 10px 10px 0px;
+    background-size: cover  ;
     height: 100%;
     width: 100%;
+    background-image: url(images/image-header-desktop.jpg);
+}
+.hero .accent{
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+    height: 100%;
+    background: hsla(277, 64%, 61%,50%);
 }
 
-.summary{
-    color: hsla(0, 0%, 100%, 0.6);
-    width: 40ch;
-    border: 1px solid hsl(277, 64%, 61%);
-    line-height: 23px;
-    font-weight: 500;
-}
+/*===============
+ATTRIBUTION
+================ */
+.attribution {
+    color: hsl(0, 0%, 99%);
+    font-size: 21px;
+    text-align: center;
+  }
 
-h1{
-    color: hsl(0, 0%, 100%);
-    width: 20ch;
-}
-main{
-    border: 2px solid black;
-    padding:30px 80px;
-    width: 550px;
-    height: 338px;
-}
-.num{
-    margin: 100px 0px 0px;
-    border: 2px solid black;
-    width: 330px;
-    display: flex;
-    justify-content: space-between;
-}
-.num p{
-    color:hsl(0, 0%, 100%);
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+  .attribution a {
+    color: hsl(180, 62%, 56%);
+  }
 
-.num p span{
-    font-size: 11px;
-    font-weight: lighter;
-    color: hsla(0, 0%, 100%, 0.6);
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*===============
+@MEDIA QUERIES
+================ */
+@media screen and (max-width:375px){
+    .card{
+        flex-direction: column-reverse;
+        margin:40px auto 0px;
+        width: 300px;
+        height: 700px;
+    }
+    .margin{
+        margin-left: 0px;
+    }
+    header{
+        width: 278px;
+        margin: -20px auto 0px;
+    }
+    main p{
+        margin: 20px auto 0px;
+        width: 250px;
+    }
+    .hero{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .hero-side{
+        height: 200px;
+        width: 300px;
+    }
+    .hero .accent{
+        border-radius: 10px 10px 0px 0px;
+    }
+    footer{
+        height: 220px;
+        margin:30px auto;
+        flex-direction: column;
+    }
+    .txt-side{
+        text-align: center;
+        border-radius: 0px 0px 10px 10px;
+        height: 500px;
+        width: 300px;
+        display: block;
+    }
 }
