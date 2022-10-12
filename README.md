@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Vercel](https://your-solution-url.com)
-- Live Site URL: [Github](https://your-live-site-url.com)
+- Solution URL: [Vercel](https://frontendmentorass4.vercel.app/)
+- Live Site URL: [Github](https://github.com/Camoscript/frontendmentorass4)
 
 ## My process
 
